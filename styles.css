@@ -115,6 +115,7 @@
   color: #ff6666;
   margin-bottom: 30px;
   text-align: center;
+  font-family: "Georgia", serif;
 }
 
 .about p {
@@ -141,6 +142,7 @@
   color: #ff6666;
   margin-bottom: 30px;
   text-align: center;
+  font-family: "Georgia", serif;
 }
 
 .company {
@@ -198,6 +200,7 @@
   color: #ff6666;
   margin-bottom: 30px;
   text-align: center;
+  font-family: "Georgia", serif;
 }
 
 .gallery {
@@ -221,7 +224,7 @@
 }
 
 .project-card:hover img {
-  transform: scale(1.1); /* Zoom in slightly */
+  transform: scale(1.1);
 }
 
 .overlay {
@@ -257,6 +260,54 @@
   font-size: 16px;
   font-family: "Arial", sans-serif;
   line-height: 1.6;
+}
+
+.contact {
+  padding: 60px 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  color: #ff6666;
+  margin-bottom: 40px;
+  font-family: "Georgia", serif;
+  letter-spacing: 1px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #3a3838;
+  font-family: "Arial", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-10px);
+}
+
+.contact-item i {
+  font-size: 36px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.contact-item span {
+  font-size: 18px;
+}
+
+.contact-item:hover i {
+  color: #ff6666;
 }
 
 @media screen and (max-width: 768px) {
@@ -343,5 +394,10 @@
 
   .projects h2 {
     font-size: 28px;
+  }
+
+  .contact-container {
+    flex-direction: row;
+    gap: 20px;
   }
 }
