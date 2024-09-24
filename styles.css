@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #444444;
+  text-align: left;
+}
+
+.navbar ul li:last-child {
+  border-bottom: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #dddddd;
+  font-size: 18px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ff6666;
+}
+
+.main-content {
+  margin-left: 250px;
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  height: 100vh;
+}
+
+.main-content section {
+  margin-bottom: 50px;
+}
+
+.home {
+  position: relative;
+  padding: 300px 20px;
+  background-color: #f4f4f4;
+  overflow: hidden;
+  height: auto;
+}
+
+.text-container {
+  float: left;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.home h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 42px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.home .highlight {
+  color: #ff6666;
+}
+
+.home .designation {
+  font-size: 28px;
+  color: #666;
+  margin-top: 0;
+}
+
+.profile-pic {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40%;
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100vh;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .navbar ul li {
+    padding: 10px;
+    border-bottom: none;
+  }
+
+  .navbar ul li a {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+    width: 100vh;
+    height: 100%;
+  }
+
+  .home {
+    position: relative;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .text-container {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .profile-pic {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    width: 40%;
+    bottom: auto;
+    right: auto;
+  }
+}
