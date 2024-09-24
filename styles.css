@@ -155,13 +155,13 @@
   border-radius: 10px;
   margin-right: 20px;
   margin-left: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .company-img:hover {
-  transform: scale(1.05); /* Slightly scale the image on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .company-details {
@@ -186,6 +186,77 @@
 
 .right {
   order: 2;
+}
+
+.projects {
+  padding: 60px 40px;
+  background-color: #ffffff;
+}
+
+.projects h2 {
+  font-size: 36px;
+  color: #ff6666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1); /* Zoom in slightly */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #f5efef;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Arial", sans-serif;
+  color: #eca2a2;
+}
+
+.overlay p {
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
 }
 
 @media screen and (max-width: 768px) {
@@ -268,5 +339,9 @@
   .company-img {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  .projects h2 {
+    font-size: 28px;
   }
 }
