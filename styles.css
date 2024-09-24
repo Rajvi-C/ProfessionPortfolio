@@ -130,6 +130,64 @@
   margin-bottom: 0;
 }
 
+#experience {
+  padding: 60px 40px;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+#experience h2 {
+  font-size: 36px;
+  color: #ff6666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.company-img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-left: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+.company-img:hover {
+  transform: scale(1.05); /* Slightly scale the image on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.company-details {
+  max-width: 100%;
+}
+
+.company h3 {
+  font-size: 28px;
+  color: #eca2a2;
+  margin-bottom: 10px;
+}
+
+.company p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.left {
+  order: 1;
+}
+
+.right {
+  order: 2;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     width: 100vh;
@@ -200,5 +258,15 @@
 
   .about p {
     font-size: 16px;
+  }
+
+  .company {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .company-img {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
